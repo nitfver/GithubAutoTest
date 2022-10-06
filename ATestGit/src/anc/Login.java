@@ -65,7 +65,7 @@ public class Login {
 		Thread.sleep(3000); 
 		 
 				
-		System.out.println("WE ARE LOGGED IN into the system");
+		System.out.println("WE ARE LOGGED IN INTO the system");
 		//driver.close();
 		
 	}
