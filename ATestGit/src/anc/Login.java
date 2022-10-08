@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -26,13 +27,19 @@ public class Login {
 		//System.setProperty("webdriver.ie.driver","C://Users//nitfv//Desktop//Working_Area//Selenium//Drivers//IEDriverServer_x64_4.5.0//IEDriverServer.exe");
 		//System.setProperty("webdriver.gecko.driver","C://Users//nitfv//Desktop//Working_Area//Selenium//Drivers//geckodriver-v0.31.0-win64//geckodriver.exe");
 		System.setProperty("webdriver.edge.driver","C://Users//nitfv//Desktop//Working_Area//Selenium//Drivers//edgedriver_win64//msedgedriver.exe");
-		System.out.println("Hello World ");
+		System.out.println("Hello World New ");
+		
+		
+		 EdgeOptions edgeOptions =new EdgeOptions();
+		 //edgeOptions.addArguments("headless");
+		 //edgeOptions.setExperimentalOption("useAutomationExtension", false);
+		 WebDriver driver= new EdgeDriver();
 	
 		
 		//WebDriver driver = new ChromeDriver();
 		//WebDriver driver = new InternetExplorerDriver();
 		//WebDriver driver = new FirefoxDriver();
-		WebDriver driver = new EdgeDriver();
+		//WebDriver driver = new EdgeDriver();
 		//driver.setCapability("marionette", true);
 		
 		
@@ -53,20 +60,21 @@ public class Login {
 		driver.findElement(By.name("login")).click();
 		//Thread.sleep(5000);
 		
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 		
-		driver.findElement(By.xpath("//span[@class='x1lliihq x6ikm8r x10wlt62 x1n2onr6'][contains(.,'Nitin Verma')]")).click();
+		//driver.findElement(By.xpath("//span[@class='x1lliihq x6ikm8r x10wlt62 x1n2onr6'][contains(.,'Nitin Verma')]")).click();
 		
 		//Thread.sleep(3000);
 		
 		//driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div[2]/div[4]/div[1]/span/div/div[1]/div/svg/g")).click();
+		driver.close();
 		
 		Thread.sleep(3000); 
 		 
 				
-		System.out.println("WE ARE LOGGED in into the system !!! and now we are HERE IT IS");
-		//driver.close();
+		System.out.println("WE ARE LOGGED INTO THE SYSTEM !!! and now we are HERE IT IS");
+		
 		
 	}
 

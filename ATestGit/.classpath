@@ -85,5 +85,6 @@
 	<classpathentry kind="lib" path="C:/Users/nitfv/Desktop/Working_Area/Selenium/SeleniumJars/selenium-java-4.5.0 (1)/selenium-safari-driver-4.5.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/nitfv/Desktop/Working_Area/Selenium/SeleniumJars/selenium-java-4.5.0 (1)/selenium-support-4.5.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/nitfv/Desktop/Working_Area/Selenium/SeleniumJars/selenium-java-4.5.0 (1)/selenium-support-4.5.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nitfv/Desktop/Working_Area/Selenium/SeleniumJars/selenium-server-4.5.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

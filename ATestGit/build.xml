@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="Auto Testing compile and run JAVA Class">
+		<target name="run" depends="compile">
+			<echo>Inside the run method</echo>
+				<java classpathref="classpath" classname="anc.Login" />
+			<echo>run method is completed</echo>
+		</target>
+		
+		<path id="classpath">
+			<pathelement location="./lib/selenium-server-4.5.0.jar" />
+			<pathelement location="./staging" />
+		</path>
+		
+		<target name="compile">
+			<echo>In the compile method</echo>
+			<javac classpathref="classpath" includeantruntime="false" srcdir="./src"  destdir="./staging" />
+			<echo>Compile method is completed</echo>
+		</target>
+</project>
